@@ -1,0 +1,42 @@
+{
+  "name": "authentication-and-testing",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "rollback": "knex migrate:rollback",
+    "migrate": "knex migrate:latest",
+    "test": "cross-env NODE_ENV=testing jest --watchAll --verbose --runInBand --silent"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LambdaSchool/web-sprint-challenge-authentication-and-testing.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "helmet": "4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
+    "knex": "0.95.6",
+    "sqlite3": "5.0.2"
+  },
+  "devDependencies": {
+    "@types/jest": "27.0.1",
+    "cross-env": "7.0.3",
+    "eslint": "7.32.0",
+    "jest": "26.6.3",
+    "nodemon": "2.0.12",
+    "supertest": "6.1.6"
+  },
+  "description": "**Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**",
+  "bugs": {
+    "url": "https://github.com/LambdaSchool/web-sprint-challenge-authentication-and-testing/issues"
+  },
+  "homepage": "https://github.com/LambdaSchool/web-sprint-challenge-authentication-and-testing#readme",
+  "keywords": [],
+  "author": ""
+}
